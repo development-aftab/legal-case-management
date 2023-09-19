@@ -1,0 +1,59 @@
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                </button>
+                <h1 class="modal-title">Master File</h1></div>
+            <form name="form1">
+            </form>
+            <div class="modal-body">
+                <form>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                {{--<th scope="col">--}}
+                                    {{--<div class="custom_radio">--}}
+                                        {{--<input type="radio" id="selectAll" name="select-all" >--}}
+                                        {{--<label for="radio-group1"></label>--}}
+                                    {{--</div>--}}
+                                {{--</th>--}}
+                                <th scope="col">Case Name</th>
+                                <th scope="col">E-Files Name</th>
+                                <th scope="col">E-Files</th>
+                                <th scope="col">Doc Pages</th>
+                                <th scope="col">Select</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            @foreach($files as $item)
+                                @foreach($item->originatingProcess as $value)
+                                    @foreach($value->orignatingProcesseds as $process)
+                                        <tr>
+                                            <td>{{ $item->name_of_parties ??''}}</td>
+                                            <td>{{ $process->title ??''}}</td>
+                                            <td><a href="{{ asset('website') }}/{{ $process->file ??''}}">abc file.pdf</a></td>
+                                            <td>{{ preg_match_all("/\/Page\W/", file_get_contents(public_path('website').'/'.$process->file??''))}} Pages</td>
+                                            <td>
+                                                {{--<a href="{{ route('originating_processed_destory' , [$process->id??'']) }}"--}}
+                                                   {{--title="Delete {{ preg_replace('/(?<=[a-z])[A-Z]|[A-Z](?=[a-z])/', ' $0', 'OriginatingProcessed') }}">--}}
+                                                    {{--<i style="color: red;" class="fa fa-times" aria-hidden="true"></i>--}}
+                                                {{--</a>--}}
+                                                kdksk
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                @endforeach
+                            @endforeach
+
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn_black btn_block">Assign Attorney</button>
+            </div>
+        </div>
+    </div>

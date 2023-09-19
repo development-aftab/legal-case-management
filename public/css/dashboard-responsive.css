@@ -1,0 +1,60 @@
+/* ================================================================================ */
+/* Media Querys  */
+/* ================================================================================ */
+
+
+/* ================ 1600 ================ */
+@media only screen and (max-width:1600px) {
+    h1{font-size: 35px;line-height: 50px;}
+    h4{font-size: 30px;line-height: 40px;}
+    h5{font-size: 22px;line-height: 25px;}
+
+    .navbar .navbar-header .navbar_right { margin: 0px 20px; }
+    .container-fluid { padding: 20px 40px; }
+    .dashboard_swiper .media-body .info-count {font-size: 45px;}
+    .sidebar-nav ul#side-menu { padding: 0 20px 0 0; }
+    .sidebar { width: 230px; }
+    .top-left-part { width: 230px; padding: 0px 20px; }
+    .page-wrapper { margin-left: 230px; }
+    .dash_main_sec_two .container-fluid:before{ margin: 0px 20px;}
+    .inner_section_calendar .fc-center h2 {font-size: 22px;}
+    .create_user_sec  .fileinput  { width: 100%; }
+    .create_user_sec  .fileinput .thumbnail { height: 250px; }
+    .inner_section_calendar  .fc-view.fc-agendaWeek-view .fc-time-grid-container {height: 250px !important;}
+    .attorney_dashboard_calendar .inner_section_calendar  .fc-view.fc-agendaWeek-view .fc-time-grid-container {height: 545px !important;}
+    .inner_section_table table tbody tr td{min-width: 180px;}
+    .login-register {position: relative; }
+}
+
+/* ================ 1440 ================ */
+@media only screen and (max-width:1440px) {}
+
+/* ================ 1366 ================ */
+@media only screen and (max-width:1366px) {}
+
+/* ================ 1280 ================ */
+@media only screen and (max-width:1280px) {}
+
+
+/* ================ 1024 ================ */
+@media only screen and (max-width:1024px) {}
+
+
+/* ================ 800 ================ */
+@media only screen and (max-width:800px) {}
+
+
+/* ================ 766 ================ */
+@media only screen and (max-width:766px) {}
+
+
+/* ================ 600 ================ */
+@media only screen and (max-width:600px) {}
+
+
+/* ================ 480 ================ */
+@media only screen and (max-width:480px) {}
+
+
+/* ================ 320 ================ */
+@media only screen and (max-width:320px) {}
